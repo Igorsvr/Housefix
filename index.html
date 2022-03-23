@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HouseFix</title>
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header class="header"> 
+        <div class="container">
+                <div class="header-block">
+                    <div class="header__logo">
+                        <img src="src/img/images.png" alt="logo">
+                    </div>                      
+                    <div class="header__info">
+                        <div class="header__contacts">
+                            <span class="header__address">Košice</span>
+                            <a href="tel:+4219034229409" class="header__phone">+420 777 167 699</a>
+                        </div>
+                        <button class="button header__button" id="button">Call me</button>
+                    </div>
+                </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main">
+            <div class="container">
+                <div class="main-block">
+                    <div class="main-text">
+                        <h1 class="main-text__title">Dekorácia vnútorných priestorov na kľúč</h1>
+                        <span class="main-text__subtitle">So zárukou kvality stanovenou v zmluve</span>
+                        <ul class="main-list">
+                            <li class="main_list__item">
+                                <div class="main_list__image">
+                                    <img src="src/img/clock.png" alt="Clock">
+                                </div>
+                                <span class="main_list__text">Presne dodržujeme termíny</span>
+                            </li>
+                            <li class="main_list__item">
+                                <div class="main_list__image">
+                                    <img src="src/img/calculator.png" alt="Calculator">
+                                </div>
+                                <span class="main_list__text">Vypočítame náklady práce a materiálov v rovnaký den požiadavky</span>
+                            </li>
+                            <li class="main_list__item">
+                                <div class="main_list__image">
+                                    <img src="src/img/paint.png" alt="Paint">
+                                </div>
+                                <span class="main_list__text">Ponúkneme vám viac než 100 možností
+                                    provedenia designu vášho bývania
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-image"> 
+                        <img src="src/img/main-image.png" alt="Rozpoloženie bytu"> 
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <section class="offer">
+            <div class="container">
+                <div class="offer-block"> 
+                    <h2 class="offer-title">Bezplatne vypracujeme design-projekt pre Váš domov a realizujeme ho!
+                    </h2>
+                    <span class="offer-subtitle">Zanechajte požiadavku pre vypracovanie bezplatného design-projektu!
+                    </span>
+                    <form action="#" class="form offer__form">
+                        <input type="text" class="input offer__input" placeholder="Vaše meno"> 
+                        <input type="tel" class="input offer__input" placeholder="Váš telefón">
+                        <button class="button offer__button">Získajte bezplatný design project</button>
+                    </form>
+
+                    <span class="offer-call">Náš manažér vám zavolá
+                        v priebehu 60 sekúnd                     
+                    </span>
+                    <span class="offer-bid">Alebo nám zavolajte sami</span>
+                        <a href="tel:+420777167699" class="offer__phone">+420 777 167 699</a>
+                </div>
+            </div>    
+        </section> 
+
+    </main>
+
+    <div class="modal" id="modal">
+        <div class="modal-dialog">
+            <button class="modal-dialog__close" id="close">&times</button>
+            <button class="modal-dialog__title">Modálne okno</h4>
+        </div>
+    </div>
+
+    <!--<script src="src/js/main.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html> 
