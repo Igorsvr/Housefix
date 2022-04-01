@@ -9,11 +9,11 @@ body{
 img {
     max-width: 100%;
     width: 48px;
-    height: 48px; 
+    height: 48px;   
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 1170px;
     width: 96%;
     margin: auto;
 }
@@ -22,20 +22,30 @@ img {
      
     background-color: #FFD200;
     color: #333; 
-    border: none;
-    
+    border: none;  
     cursor: pointer;
     padding: 18px 47px;
     border-radius: 10px;
 } 
 
-    
+.button:hover {
+    background-color:  #f7dd6b;
+  }
 
 .input {
     border: 1px solid #dddddd;
     font-size: 15px;
     border-radius: 10px;
     padding: 20px 25px;
+     
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 45px;
+     
      
 }
 
@@ -83,18 +93,13 @@ img {
     font-size: 13px;
 }
 
-.header__button:hover {   
-    background-color: ( lighten#FFD200, 20%);
-    opacity: 1;
-}
-
 .main {
     background-color: #f5f5f5;
 }
 
 .main-block {
     display: flex;
-    align-items: center;
+    align-items: center; 
     padding: 40px 0 15px 0;
      
 }
@@ -162,18 +167,19 @@ img {
 
 .offer {
     padding: 90px 0;
-    background-image: url(../img/obdelnik.png);
+    background-image: url('../img/rectangle.png');
     background-repeat: no-repeat;
     background-position: center right;
     background-size: contain;
     position: relative;
+    
 } 
 
 .offer:before {
-    content: '';
+    content: ''; 
     width: 50%;
     height: 100%;
-    position: absolute;
+    position: absolute; 
     background-color: #fff;
     top: 0;
     left: 0;
@@ -185,6 +191,7 @@ img {
     position: relative;
 }
 
+ 
 .offer-title {
     font-size: 24px;
     line-height: 35px;
@@ -218,23 +225,60 @@ img {
 
 .offer-call {
     display: inline-block;
-    max-width: 260px;
+    max-width: 180px;
     font-size: 16px;
     margin-bottom: 15px;
+    margin-right: 130px;
 }
 
 .offer-bid {
     display: inline-block;
     max-width: 160px;
-    font-size: 16px;
-    margin-bottom: 15px;
-     
+    font-size: 16px;     
 }
 
 .offer__phone {
+    text-decoration: none;
+    font-weight: 700;
     display: block;
 }
 
+.portfolio {
+    padding: 80px 170px 100px 0;
+    background: #f5f5f5 url('../img/rectangle2.png') left repeat-y;
+    background-size: 50%;  
+    position: absolute;   
+    margin-right: 0;
+}
+
+@media (max-width: 1200px) {
+    .container {
+      width: 90%;
+    }
+  }
+
+.portfolio__title {
+    margin-bottom: 100px;    
+    color: #333;
+}
+
+.portfolio__arrows {
+    max-width: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.arrows__left, .arrows__right {
+    cursor: pointer;
+}
+
+.slider__image {
+    margin: auto;
+    width: 370px; 
+    height: 280px;
+}
 
 .modal {
     position: fixed;
@@ -260,7 +304,7 @@ img {
     position: relative;
 }
 
-modal-dialog__close {
+.modal-dialog__close {
     position: absolute;
     right: 0;
     top: 0;
